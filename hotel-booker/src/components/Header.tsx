@@ -23,7 +23,8 @@ function Header() {
           <nav className="flex gap-7.5">
             {navItems.map((item) => (
               <a
-                className="cursor-pointer font-outfit font-medium transition:all 0.3s hover:text-[#49B9FF]"
+                key={`${item.href}-${item.label}`}
+                className="cursor-pointer font-outfit font-medium transition:all 0.3s hover:text-blue-300"
                 href={item.href}
               >
                 {item.label}
